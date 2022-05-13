@@ -18,13 +18,17 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(./assets/images/background.png);
+    background-size: contain;
+}
 .header-title{
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
     font-style: bold;
     font-size: 3em;
-    letter-spacing: 0.1em;
+    color: #FFFFFF;
 }
 
 .slider{
@@ -69,10 +73,15 @@ input{
 .navigation-item{
     width: 2em;
     height: 2em;
-    background-color: brown;
+    background-color: #FD8558;
     margin: 0.5em;
-    border-radius: 10%;
+    border-radius: 15%;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+.navigation-item:hover{
+    border-radius: 35%;
+    transform: translateY(-25%);
 }
 
 input#button-1:checked ~ .slider-images .images-item:nth-child(1){
@@ -124,4 +133,29 @@ input#button-5:checked ~ .slider-title .slider-title-item:nth-child(5){
 }
 input#button-6:checked ~ .slider-title .slider-title-item:nth-child(6){
     font-size: 1.5em;
+}
+
+input#button-1:checked ~ .slider-navigation .navigation-item:nth-child(1){
+    border-radius: 50%;
+    transform: translateY(-25%);
+}
+input#button-2:checked ~ .slider-navigation .navigation-item:nth-child(2){
+    border-radius: 50%;
+    transform: translateY(-25%);
+}
+input#button-3:checked ~ .slider-navigation .navigation-item:nth-child(3){
+    border-radius: 50%;
+    transform: translateY(-25%);
+}
+input#button-4:checked ~ .slider-navigation .navigation-item:nth-child(4){
+    border-radius: 50%;
+    transform: translateY(-25%);
+}
+input#button-5:checked ~ .slider-navigation .navigation-item:nth-child(5){
+    border-radius: 50%;
+    transform: translateY(-25%);
+}
+input#button-6:checked ~ .slider-navigation .navigation-item:nth-child(6){
+    border-radius: 50%;
+    transform: translateY(-25%);
 }
