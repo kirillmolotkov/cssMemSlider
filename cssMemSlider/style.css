@@ -61,6 +61,7 @@ img{
 .slider-title{
     display: flex;
     align-self: baseline;
+    height: 10vh;
 }
 
 .slider-navigation{
