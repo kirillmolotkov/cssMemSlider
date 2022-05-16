@@ -44,7 +44,7 @@ body{
 .slider-images{
     display: flex;
     width: 600%;
-    height: 60vh;
+    height: 55vh;
 }
 .images-item{
     width: 20%;
@@ -62,6 +62,13 @@ img{
     display: flex;
     align-self: baseline;
     height: 10vh;
+}
+.title-item{
+    text-align: start;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
 }
 
 .slider-navigation{
@@ -118,22 +125,22 @@ input#button-6:checked ~ .slider-images .images-item:nth-child(6){
 }
 
 input#button-1:checked ~ .slider-title .slider-title-item:nth-child(1){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 input#button-2:checked ~ .slider-title .slider-title-item:nth-child(2){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 input#button-3:checked ~ .slider-title .slider-title-item:nth-child(3){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 input#button-4:checked ~ .slider-title .slider-title-item:nth-child(4){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 input#button-5:checked ~ .slider-title .slider-title-item:nth-child(5){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 input#button-6:checked ~ .slider-title .slider-title-item:nth-child(6){
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 input#button-1:checked ~ .slider-navigation .navigation-item:nth-child(1){
@@ -159,4 +166,48 @@ input#button-5:checked ~ .slider-navigation .navigation-item:nth-child(5){
 input#button-6:checked ~ .slider-navigation .navigation-item:nth-child(6){
     border-radius: 50%;
     transform: translateY(-25%);
+}
+
+
+@media (max-width: 768px) {
+    .slider-images{
+        height: 50vh;
+    }
+    .slider-title{
+        align-self: center;
+    }
+    .slider-navigation{
+        align-self: center;
+    }
+    .navigation-item{
+        width: 1em;
+        height: 1em;
+        margin: 0.6em;
+    }
+}
+@media (max-width: 320px) {
+    .slider-images{
+        height: 40hv;
+    }
+    .navigation-item{
+        margin: 0.1em;
+    }
+    input#button-1:checked ~ .slider-title .slider-title-item:nth-child(1){
+        font-size: 0.8em;
+    }
+    input#button-2:checked ~ .slider-title .slider-title-item:nth-child(2){
+        font-size: 0.8em;
+    }
+    input#button-3:checked ~ .slider-title .slider-title-item:nth-child(3){
+        font-size: 0.8em;
+    }
+    input#button-4:checked ~ .slider-title .slider-title-item:nth-child(4){
+        font-size: 0.8em;
+    }
+    input#button-5:checked ~ .slider-title .slider-title-item:nth-child(5){
+        font-size: 0.8em;
+    }
+    input#button-6:checked ~ .slider-title .slider-title-item:nth-child(6){
+        font-size: 0.8em;
+    }
 }
